@@ -13,13 +13,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-            bat 'mvn -B -U -e -V clean -DskipTests package'
+            exec 'mvn -B -U -e -V clean -DskipTests package'
       }
     }
 
     stage('Test') {
       steps {
-          bat "mvn test"
+          exec "mvn test"
       }
     }
 
