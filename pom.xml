@@ -38,7 +38,7 @@
 						<username>ssambana180391</username>
 						<password>Whish@2021</password>
 						<applicationName>sample-deployment</applicationName>
-						<environment>Sandbox</environment>
+						<environment>Dev</environment>
 						<workerType>Micro</workerType>
 						<objectStoreV2>true</objectStoreV2>
 						<businessGroup>University of westminister</businessGroup>
