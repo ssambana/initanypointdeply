@@ -41,7 +41,7 @@
 						<environment>DEV</environment>
 						<workerType>Micro</workerType>
 						<objectStoreV2>true</objectStoreV2>
-						<businessGroup>University of westminister</businessGroup>
+						<businessGroup>ISS</businessGroup>
 						<workers>1</workers>
 					</cloudHubDeployment>
 				  <classifier>mule-application</classifier>
