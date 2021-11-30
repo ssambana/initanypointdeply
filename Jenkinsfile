@@ -1,7 +1,7 @@
 pipeline {
 
   agent any
-  environment {
+	tools {nodejs "NodeJS"}  environment {
     //adding a comment for the commit test
     //DEPLOY_CREDS = credentials('deploy-anypoint-user')
     MULE_VERSION = '4.4.0'
@@ -13,6 +13,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+	      sh '/var/lib/jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/NodeJS/bin/anypoint-cli'
             sh 'mvn -B -U -e -V clean -DskipTests package'
       }
     }
